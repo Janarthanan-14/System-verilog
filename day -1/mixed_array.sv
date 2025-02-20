@@ -10,3 +10,7 @@ initial begin
   end
 end
  endmodule
+
+//array[2] = x
+//array[1] = 53
+//array[0] = 90
