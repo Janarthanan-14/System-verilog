@@ -25,3 +25,10 @@ initial begin
 	pkt.display();
 end
 endmodule
+
+
+output 
+addr = 11
+data = 1
+write = 1
+pkt_type = GOOD_PKT
