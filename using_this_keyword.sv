@@ -25,3 +25,11 @@ initial begin
 	pkt.display();
 end
 endmodule
+
+
+output 
+addr = 0
+data = 0
+write = 0
+pkt_type = 
+ 
