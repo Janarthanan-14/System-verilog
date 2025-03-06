@@ -20,3 +20,16 @@ initial begin
 	end
 end
 endmodule
+
+
+
+output 
+
+ packet_id =1
+ 
+ 
+  packet_id =2
+ 
+ 
+  packet_id =3
+
