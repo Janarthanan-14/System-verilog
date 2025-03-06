@@ -21,3 +21,6 @@ initial begin
 end
 endmodule
 
+output
+class_1 :: value ofx=10
+class_2 :: value ofx=20
