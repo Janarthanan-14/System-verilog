@@ -7,3 +7,8 @@ module foreach_example;
     end
   end
 endmodule
+
+output 
+# KERNEL: array[0]=.100
+# KERNEL: array[1]=.200
+# KERNEL: array[2]=.300
