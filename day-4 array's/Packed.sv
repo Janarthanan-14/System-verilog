@@ -1,37 +1,17 @@
-// module declaration for packed array
-module packed_array;
-
-  bit [3:0]abc;       
-  logic [15:0] pqr;   
-  reg [7:0] xyz;      
-
- initial begin
-  abc = 4'b0110;     // Assigning a 4-bit binary value to 'abc'  
-  pqr = 16'h10FE;    // Assigning a 16-bit hexadecimal value to 'pqr'  
-  xyz = 8'd16;       // Assigning an 8-bit decimal value to 'xyz'  
-  
-  $display("");
-  $display("// example for single dimensional packed array");
-  $display("");
-
-  //taking each bit and printing value it's value using $display built in function
-  $display("// displaying the bit data type values");
-  foreach(abc[i]) begin
-    $display("data of abc[%0d] = %0b",i,abc[i]);
+// Code your testbench here
+// or browse Examples
+module packed_array_example;
+  bit  [2:0][3:0] parray = '{4'b1011, 4'b1001, 4'b0110};
+  initial begin
+    foreach (parray[i]) begin
+      $display("parray[%0b] = %0d", i, parray[i]);
+    end
   end
-  $display("");
-  //taking each bit of logic data type and printing it's value as same as above
-  $display("// displaying the logic data type values");
-  foreach(pqr[i]) begin
-    $display("data of pqr[%0d] = %0b",i,pqr[i]);
-  end
-  $display("");
-  //taking each bit of reg data type and printing it's value as same as above
-  $display("// displaying the reg data type values");
-  foreach(xyz[i]) begin
-    $display("data of xyz[%0d] = %0b",i,xyz[i]);
-  end
-  $display("");
- end
+endmodule
 
-endmodule : packed_array
+
+output:
+
+# KERNEL: parray[10] = 11
+# KERNEL: parray[1] = 9
+# KERNEL: parray[0] = 6
